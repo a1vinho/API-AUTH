@@ -1,0 +1,27 @@
+### VARIABLES 
+@apiURL = http://localhost:8080/api
+# @name register
+POST {{apiURL}}/register
+Content-Type: application/json
+
+{
+    "email": "teste123@hotmail.com",
+    "username": "Alvinho",
+    "password": "senha123"
+}
+###
+
+# @name auth
+POST {{apiURL}}/login
+Content-Type: application/json
+
+{
+    "email": "alvarogabriel336@gmail.com",
+    "username": "Alvinho",
+    "password": "senha123"
+}
+###
+@token = {{auth.response.body.token}}
+GET {{apiURL}}/profile
+Authorization: Bearer {{token}}
+###
