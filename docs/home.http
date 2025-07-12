@@ -6,7 +6,7 @@ Content-Type: application/json
 
 {
     "email": "teste123@hotmail.com",
-    "username": "Alvinho",
+    "username": "ExampleTeste",
     "password": "senha123"
 }
 ###
@@ -16,8 +16,8 @@ POST {{apiURL}}/login
 Content-Type: application/json
 
 {
-    "email": "alvarogabriel336@gmail.com",
-    "username": "Alvinho",
+    "email": "teste336@gmail.com",
+    "username": "TesteExample",
     "password": "senha123"
 }
 ###
